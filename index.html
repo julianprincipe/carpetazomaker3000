@@ -20,10 +20,28 @@
       <p id="crearCarpetazo2017Command"></p>
   </main>
   <script>
+    var blackList = [
+      "gordas", "gorda", 
+      "negra", "negras", 
+      "judia", "judias", 
+      "paraguaya", "paraguayas", 
+      "boliviana", "bolivianas", 
+      "putas", "puto",
+      "negro", "trolo", 
+      "putos", "negros", 
+      "trolos", "boliviano", 
+      "bolivianos", "paraguayo", 
+      "paraguayos", "judio",
+      "judios", "puta",
+      "militares", "videla",
+      "desaparecidos", "africanos",
+      "africana", "africanas",
+      "de%20mierda"
+    ];
     function crearCarpetazo() {
-      window.location.href = "https://twitter.com/search?q=from%3A" + document.getElementById("userName").value + "%20%20%22gordas%22%20OR%20%22gorda%22%20OR%20%22negra%22%20OR%20%22negras%22%20OR%20%22judia%22%20OR%20%22judias%22%20OR%20%22paraguaya%22%20OR%20%22paraguayas%22%20OR%20%22boliviana%22%20OR%20%22bolivianas%22%20OR%20%22putas%22%20OR%20%22puto%22%20OR%20%22negro%22%20OR%20%22trolo%22%20OR%20%22putos%22%20OR%20%22negros%22%20OR%20%22trolos%22%20OR%20%22boliviano%22%20OR%20%22bolivianos%22%20OR%20%22paraguayos%22%20OR%20%22paraguayo%22%20OR%20%22judio%22%20OR%20%22judios%22%20OR%20%22militares%22%20OR%20%22videla%22%20OR%20%22desaparecidos%22%20OR%20%22africanos%22%20OR%20%22africano%22%20OR%20%22de%20mierda%22%20&src=typed_query&f=top";
+      window.location.href = "https://twitter.com/search?q=from%3A" + document.getElementById("userName").value + "%20%20%22" + blackList.join("%22%20OR%20%22") + "&src=typed_query&f=top";
     }
     function crearCarpetazo2017() {
-      window.location.href = "https://twitter.com/search?q=from%3A" + document.getElementById("userName").value + "%20until%3A2017-01-01%20%20%22gordas%22%20OR%20%22gorda%22%20OR%20%22negra%22%20OR%20%22negras%22%20OR%20%22judia%22%20OR%20%22judias%22%20OR%20%22paraguaya%22%20OR%20%22paraguayas%22%20OR%20%22boliviana%22%20OR%20%22bolivianas%22%20OR%20%22putas%22%20OR%20%22puto%22%20OR%20%22negro%22%20OR%20%22trolo%22%20OR%20%22putos%22%20OR%20%22negros%22%20OR%20%22trolos%22%20OR%20%22boliviano%22%20OR%20%22bolivianos%22%20OR%20%22paraguayos%22%20OR%20%22paraguayo%22%20OR%20%22judio%22%20OR%20%22judios%22%20OR%20%22militares%22%20OR%20%22videla%22%20OR%20%22desaparecidos%22%20OR%20%22africanos%22%20OR%20%22africano%22%20OR%20%22de%20mierda%22%20&src=typed_query&f=top";
+      window.location.href = "https://twitter.com/search?q=from%3A" + document.getElementById("userName").value + "%20until%3A2017-01-01%20%20%22" + blackList.join("%22%20OR%20%22") +"%22&src=typed_query&f=top";
     }
   </script>
