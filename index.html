@@ -39,7 +39,7 @@
       "de%20mierda"
     ];
     function crearCarpetazo() {
-      window.location.href = "https://twitter.com/search?q=from%3A" + document.getElementById("userName").value + "%20%20%22" + blackList.join("%22%20OR%20%22") + "&src=typed_query&f=top";
+      window.location.href = "https://twitter.com/search?q=from%3A" + document.getElementById("userName").value + "%20%20%22" + blackList.join("%22%20OR%20%22") + "%22&src=typed_query&f=top";
     }
     function crearCarpetazo2017() {
       window.location.href = "https://twitter.com/search?q=from%3A" + document.getElementById("userName").value + "%20until%3A2017-01-01%20%20%22" + blackList.join("%22%20OR%20%22") +"%22&src=typed_query&f=top";
