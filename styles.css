@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+    background-color: #fdfbf3;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+input {
+    margin: 8px 0;
+    padding: 12px 20px;
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    margin: 10px 0px 0px 0px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+
+}
+ .danger{
+    cursor: pointer;
+    padding: 12px 20px;
+    color: white;
+    background-color: #e41d2e;
+}
