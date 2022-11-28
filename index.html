@@ -11,37 +11,14 @@
   <main>
       <h1>Carpetazomaker 3000</h1>
       <h2>Username:</h2>
-      <input margin: length|auto type="text" id="userName" name="name" required minlength="1" maxlength="20" size="16"
-        placeholder="@">
-      <button onclick="crearCarpetazo()">Carpetealo</button>
+      <input type="text" id="userName" name="name" placeholder="@">
+      <button id="carpetazo" onclick="crearCarpetazo(this.id)">Carpetealo</button>
       <p id="crearCarpetazoCommand"></p>
-      <button class="danger" onclick="crearCarpetazo2017()">Carpetealo
+      <button id="carpetazo2017" class="danger" onclick="crearCarpetazo(this.id)">Carpetealo
         PRE-2017 (peligro)</button>
       <p id="crearCarpetazo2017Command"></p>
-  </main>
-  <script>
-    var blackList = [
-      "gordas", "gorda", 
-      "negra", "negras", 
-      "judia", "judias", 
-      "paraguaya", "paraguayas", 
-      "boliviana", "bolivianas", 
-      "putas", "puto",
-      "negro", "trolo", 
-      "putos", "negros", 
-      "trolos", "boliviano", 
-      "bolivianos", "paraguayo", 
-      "paraguayos", "judio",
-      "judios", "puta",
-      "militares", "videla",
-      "desaparecidos", "africanos",
-      "africana", "africanas",
-      "de%20mierda"
-    ];
-    function crearCarpetazo() {
-      window.location.href = "https://twitter.com/search?q=from%3A" + document.getElementById("userName").value + "%20%20%22" + blackList.join("%22%20OR%20%22") + "%22&src=typed_query&f=top";
-    }
-    function crearCarpetazo2017() {
-      window.location.href = "https://twitter.com/search?q=from%3A" + document.getElementById("userName").value + "%20until%3A2017-01-01%20%20%22" + blackList.join("%22%20OR%20%22") +"%22&src=typed_query&f=top";
-    }
-  </script>
+
+    <script type="text/javascript" src="carpetazo.js"></script>
+    </main>
+</body>
+</html>
