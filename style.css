@@ -48,12 +48,9 @@ main{
 	justify-content: start;
 
 }	
-	.left-content p{
-		color: red;
-		text-transform: uppercase;
-		font-size: 38px;
-		transform: rotate(-45deg);
-		font-weight: bold;
+	.left-content img{
+		width: 250px;
+		margin-left: 42px;
 	}
 
 .right-content{
@@ -103,6 +100,7 @@ main{
 
 h2{
 	text-align: center;
+	display: none;
 }
 img{
 	width: 150px;
@@ -144,8 +142,17 @@ button{
 	}
 
 .s{
-	display: none;
+	border-radius: 0;
+	background-color: red;
+	border-style: none;
+
 }
+
+	.s:hover{
+		border:none;
+		background-color: darkred;
+
+	}
 @media ( max-width: 984px){
 	.left-content{
 		display: none;
