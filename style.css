@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+  --danger: #E5BE01;
+}
+
+body{
+	background-image: url(e.jpg);
+	background-repeat: ;
+}
+
+header{
+	padding: 20px;
+	background-color:  black;
+	margin-bottom: 120px;
+	text-align: center;
+}
+	header h1 {
+		color: #fff;
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+main{
+	display: flex;
+	justify-content: center;
+}
+
+.content{
+
+	display: flex;
+	justify-content:center;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.left-content{
+	width: 1245px;
+	min-width: 562px;
+	height: 600px;
+	
+	background-image:url(image/1.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+
+}	
+	.left-content p{
+		color: red;
+		text-transform: uppercase;
+		font-size: 38px;
+		transform: rotate(-45deg);
+		font-weight: bold;
+	}
+
+.right-content{
+	width: 100%;
+	min-width: 414px;
+	max-height: 600px;
+	
+	background-image:url(image/2.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	
+}
+.card{
+	
+	
+	width: 250px;
+	background-color: var(--danger);
+	margin-left:60px ;
+	box-shadow: 10px 16px 6px -3px rgba(0,0,0,0.4);
+	
+
+
+}
+
+.top-card{
+	background-color: black;
+	color: var(--danger);
+	text-transform: uppercase;
+	padding: 15px;
+	text-align: center;
+}
+
+
+
+.m-card{
+	padding: 20px;
+}
+.m-card-top{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2{
+	text-align: center;
+}
+img{
+	width: 150px;
+}
+
+input{
+	padding: 10px;
+	border-radius: 10px;
+	color: var(--danger);
+	font-size: 12px;
+	font-weight: bold;
+	background-color: black;
+}
+.bottom-card{
+	background-color: black;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+}
+
+
+button{
+	padding: 12px 32px;
+	border-radius: 10px;
+	background-color: var(--danger);
+	margin: 0 auto;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 800;
+	cursor: pointer;
+	
+}
+
+	button:hover{
+		background-color:black ;
+		color: var(--danger);
+		border: #E5BE01 2px dashed;
+		transition: .5s;
+	}
+
+.s{
+	display: none;
+}
+@media ( max-width: 984px){
+	.left-content{
+		display: none;
+	}
+	
+	.content{
+		justify-content: center;
+		
+	}
+	.right-content{
+		width: 400px;
+		height: 700px;
+
+	}
+
+}
+
+@media ( max-width: 413px){
+	.right-content{
+		background-image: none;
+	}
+	.card{
+		border: solid 1px #fff;
+		margin-left: 0;
+		box-shadow: 10px 16px 6px -3px rgba(0,0,0,0.4);
+	}
+}
